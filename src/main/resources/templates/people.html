@@ -25,8 +25,15 @@
                 <th scope="row" th:text="${person.id}"></th>
                 <td th:text="${person.lastname}"></td>
                 <td th:text="${person.firstname}"></td>
-                <td th:text="${person.dob}"></td>
-                <td th:text="${person.salary}"></td>
+                <td th:text="${{person.dob}}"></td>
+                <td th:text="${(person.salary)}"></td>
+            </tr>
+            <tr  th:remove="all">
+                <th scope="row"></th>
+                <td ></td>
+                <td ></td>
+                <td ></td>
+                <td ></td>
             </tr>
             </tbody>
         </table>
