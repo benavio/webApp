@@ -17,11 +17,11 @@ public class PeopleController {
     public String getPeople(Model model){
         List<Person> people = List.of(
                 new Person(10l,"Jake", "Smith", LocalDate.of(1950,1,1), new BigDecimal("50000")),
-                new Person(10l,"Jake", "Smith", LocalDate.of(1950,1,1), new BigDecimal("50000")),
-                new Person(10l,"Jake", "Smith", LocalDate.of(1950,1,1), new BigDecimal("50000")),
-                new Person(10l,"Jake", "Smith", LocalDate.of(1950,1,1), new BigDecimal("50000")),
-                new Person(10l,"Jake", "Smith", LocalDate.of(1950,1,1), new BigDecimal("50000")),
-                new Person(10l,"Jake", "Smith", LocalDate.of(1950,1,1), new BigDecimal("50000"))
+                new Person(20l,"Jake", "Smith", LocalDate.of(1950,1,1), new BigDecimal("50000")),
+                new Person(30l,"Jake", "Smith", LocalDate.of(1950,1,1), new BigDecimal("50000")),
+                new Person(40l,"Jake", "Smith", LocalDate.of(1950,1,1), new BigDecimal("50000")),
+                new Person(50l,"Jake", "Smith", LocalDate.of(1950,1,1), new BigDecimal("50000")),
+                new Person(60l,"Jake", "Smith", LocalDate.of(1950,1,1), new BigDecimal("50000"))
         );
         model.addAttribute("people", people);
         return "people";
